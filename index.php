@@ -1,6 +1,7 @@
 <?php
 	use ASDRUBAEL\TO_XML;
-	
+	require __DIR__ . "/arrayToXML.php";
+
 	$arr = array(
 		"name" => "parent",
 		"attr" => ["ID" => 22],
@@ -15,6 +16,6 @@
 		]
 	);
 	
-	$toXml = new ArrayToXML($arr);
+	$toXml = new TO_XML\ArrayToXML($arr);
 	
 	
